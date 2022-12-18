@@ -101,7 +101,7 @@ namespace TailSpin.SpaceGame.Web.Controllers
                 // Combine each score with its profile.
                 vm.Scores = scores.Zip(profiles, (score, profile) => new ScoreProfile { Score = score, Profile = profile.Result });
 
-               // return View(vm);
+                return View(vm);
             }
             catch (Exception)
             {
